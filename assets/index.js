@@ -33,14 +33,30 @@ inquirer
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+            <title>Portfiolio Generator</title>
+            <link rel="stylesheet" href="./assets/style.css">
         </head>
+        
         <body>
-            <p>${response.name}</p>
-            <p>${response.location}</p>
-            <p>${response.bio}</p>
-            <p>${response.linkedin}</p>
-            <p>${response.github}</p>
+        
+            <header>
+                <h1>Hi, my name is ${name}</h1>
+                <h2>I live in ${location}</h2>
+            </header>
+        
+            <div id="bio">
+                <p>A hobby I have is ${bio}</p>
+            </div>
+        
+            <hr>
+        
+            <footer>
+                <ul>
+                    <li>LinkedIn: <a href="${linkedin}" target="_blank">${linkedin}</a></li>
+                    <li>GitHub: <a href="${github}" target="_blank">${github}</a></li>
+                </ul>
+            </footer>
+        
         </body>
         </html>`
         , (err) =>
