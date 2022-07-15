@@ -40,20 +40,20 @@ inquirer
         <body>
         
             <header>
-                <h1>Hi, my name is ${name}</h1>
-                <h2>I live in ${location}</h2>
+                <h1>Hi, my name is ${response.name}</h1>
+                <h2>I live in ${response.location}</h2>
             </header>
         
             <div id="bio">
-                <p>A hobby I have is ${bio}</p>
+                <p>A hobby I have is ${response.bio}</p>
             </div>
         
             <hr>
         
             <footer>
                 <ul>
-                    <li>LinkedIn: <a href="${linkedin}" target="_blank">${linkedin}</a></li>
-                    <li>GitHub: <a href="${github}" target="_blank">${github}</a></li>
+                    <li>LinkedIn: <a href="${response.linkedin}" target="_blank">${response.linkedin}</a></li>
+                    <li>GitHub: <a href="${response.github}" target="_blank">${response.github}</a></li>
                 </ul>
             </footer>
         
